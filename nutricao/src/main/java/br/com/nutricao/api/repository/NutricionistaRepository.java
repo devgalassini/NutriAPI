@@ -1,4 +1,10 @@
 package br.com.nutricao.api.repository;
 
-public interface NutricionistaRepository {
+import br.com.nutricao.api.model.Nutricionista;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface NutricionistaRepository
+        extends JpaRepository <Nutricionista, Long> {
+
+
 }
